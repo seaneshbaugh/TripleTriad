@@ -105,6 +105,90 @@
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+
+    CGPoint location = [touch locationInView:touch.view];
+
+    // Board offset: 240, 186
+    // Board points:
+    // [0, 0]: [287, 246]
+    // [0, 1]: [384, 246]
+    // [0, 2]: [483, 246]
+    // [1, 0]: [287, 371]
+    // [1, 1]: [384, 371]
+    // [1, 2]: [483, 371]
+    // [2, 0]: [287, 496]
+    // [2, 1]: [384, 496]
+    // [2, 2]: [483, 496]
+
+    NSArray *boardPoints = [NSArray arrayWithObjects:[NSValue valueWithCGPoint:CGPointMake(287, 246)], [NSValue valueWithCGPoint:CGPointMake(384, 246)], [NSValue valueWithCGPoint:CGPointMake(483, 246)],
+                            [NSValue valueWithCGPoint:CGPointMake(287, 371)], [NSValue valueWithCGPoint:CGPointMake(384, 371)], [NSValue valueWithCGPoint:CGPointMake(483, 371)],
+                            [NSValue valueWithCGPoint:CGPointMake(287, 496)], [NSValue valueWithCGPoint:CGPointMake(384, 496)], [NSValue valueWithCGPoint:CGPointMake(483, 496)], nil];
+
+    int closestBoardPointIndex = 0;
+
+    double closestDistanceFromBoard = sqrt((pow(location.x - [[boardPoints objectAtIndex:0] CGPointValue].x, 2) + pow(location.y - [[boardPoints objectAtIndex:0] CGPointValue].y, 2)));
+
+    for (int i = 1; i < [boardPoints count]; i++) {
+        double distanceFromBoardPoint = sqrt((pow(location.x - [[boardPoints objectAtIndex:i] CGPointValue].x, 2) + pow(location.y - [[boardPoints objectAtIndex:i] CGPointValue].y, 2)));
+
+        if (distanceFromBoardPoint < closestDistanceFromBoard) {
+            closestDistanceFromBoard = distanceFromBoardPoint;
+
+            closestBoardPointIndex = i;
+        }
+    }
+
+    if (closestDistanceFromBoard > 50) {
+        [UIView animateWithDuration:0.35
+                              delay:0.0
+                            options:UIViewAnimationCurveEaseOut
+                         animations:^{
+                             [[currentCard imageView] setFrame:CGRectMake(10, 100, [currentCard imageView].frame.size.width, [currentCard imageView].frame.size.height)];
+                         }
+                         completion:nil];
+    } else {
+        [UIView animateWithDuration:0.35
+                              delay:0.0
+                            options:UIViewAnimationCurveEaseOut
+                         animations:^{
+                             [currentCard imageView].center = [[boardPoints objectAtIndex:closestBoardPointIndex] CGPointValue];
+                         }
+                         completion:nil];
+
+
+          UIView *myView = [currentCard imageView];
+          CALayer *layer = myView.layer;
+          //    CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
+          //    rotationAndPerspectiveTransform.m34 = 1.0 / -500;
+          //    rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, 90.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
+          //    layer.transform = rotationAndPerspectiveTransform;
+
+
+          //    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+          //    animation.duration = .25;
+          //    animation.fromValue = [NSNumber numberWithFloat:0];
+          //    animation.toValue = [NSNumber numberWithFloat:2 * M_PI];
+
+
+          CATransform3D transform = CATransform3DIdentity;
+          transform.m34 = 1.0 / -500;
+          layer.transform = transform;
+
+          CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+          animation.values = [NSArray arrayWithObjects:
+                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 0 * M_PI / 2, 0, 1, 0)],
+                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 1 * M_PI / 2, 0, 1, 0)],
+                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 2 * M_PI / 2, 0, 1, 0)],
+                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 3 * M_PI / 2, 0, 1, 0)],
+                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 4 * M_PI / 2, 0, 1, 0)],
+                              nil];
+          animation.duration = 0.3;
+          
+          
+          [layer addAnimation:animation forKey:animation.keyPath];
+     }
+
     self->startTouchPosition.x = -1;
 
     self->startTouchPosition.y = -1;
