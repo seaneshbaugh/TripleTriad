@@ -134,6 +134,9 @@
 		7B10AF43192B29FA00D20A8E /* 110-squall.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B10AED4192B29F900D20A8E /* 110-squall.png */; };
 		7B1AF196192B97560057A2A5 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1AF195192B97560057A2A5 /* Board.m */; };
 		7B1AF199192B97750057A2A5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1AF198192B97750057A2A5 /* Card.m */; };
+		7B1AF19C192C09A10057A2A5 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1AF19B192C09A10057A2A5 /* Deck.m */; };
+		7B1AF19F192C0A490057A2A5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1AF19E192C0A490057A2A5 /* Game.m */; };
+		7B1AF1A2192C6EC50057A2A5 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1AF1A1192C6EC50057A2A5 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -281,6 +284,12 @@
 		7B1AF195192B97560057A2A5 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
 		7B1AF197192B97750057A2A5 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		7B1AF198192B97750057A2A5 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		7B1AF19A192C09A10057A2A5 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		7B1AF19B192C09A10057A2A5 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		7B1AF19D192C0A490057A2A5 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		7B1AF19E192C0A490057A2A5 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		7B1AF1A0192C6EC50057A2A5 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		7B1AF1A1192C6EC50057A2A5 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +361,12 @@
 				7B1AF195192B97560057A2A5 /* Board.m */,
 				7B1AF197192B97750057A2A5 /* Card.h */,
 				7B1AF198192B97750057A2A5 /* Card.m */,
+				7B1AF19A192C09A10057A2A5 /* Deck.h */,
+				7B1AF19B192C09A10057A2A5 /* Deck.m */,
+				7B1AF19D192C0A490057A2A5 /* Game.h */,
+				7B1AF19E192C0A490057A2A5 /* Game.m */,
+				7B1AF1A0192C6EC50057A2A5 /* Player.h */,
+				7B1AF1A1192C6EC50057A2A5 /* Player.m */,
 			);
 			path = TripleTriad;
 			sourceTree = "<group>";
@@ -719,10 +734,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1AF1A2192C6EC50057A2A5 /* Player.m in Sources */,
 				7B1AF199192B97750057A2A5 /* Card.m in Sources */,
 				7B10AE46192AF94700D20A8E /* ViewController.m in Sources */,
 				7B10AE40192AF94700D20A8E /* AppDelegate.m in Sources */,
 				7B1AF196192B97560057A2A5 /* Board.m in Sources */,
+				7B1AF19C192C09A10057A2A5 /* Deck.m in Sources */,
+				7B1AF19F192C0A490057A2A5 /* Game.m in Sources */,
 				7B10AE3C192AF94700D20A8E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
