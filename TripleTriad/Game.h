@@ -10,6 +10,8 @@
 
 @property (strong, nonatomic) Player *player2;
 
+@property (assign, nonatomic) BOOL turn;
+
 - (id)init;
 
 @end

@@ -11,6 +11,8 @@
 
     self.player2 = [[Player alloc] init];
 
+    self.turn = YES;
+
     return self;
 }
 

@@ -12,6 +12,10 @@
 
     CGPoint startImagePosition;
 
+    CGPoint originalImagePosition;
+
+    NSUInteger originalImageIndex;
+
     Card *currentCard;
 }
 

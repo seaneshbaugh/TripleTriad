@@ -11,19 +11,19 @@
 
     self->game = [[Game alloc] init];
 
-    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"103-selphie" name:@"Selphie" up:[NSNumber numberWithInt:10] down:[NSNumber numberWithInt:6] left:[NSNumber numberWithInt:4] right:[NSNumber numberWithInt:8]]];
-    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"104-quistis" name:@"Quistis" up:[NSNumber numberWithInt:9] down:[NSNumber numberWithInt:10] left:[NSNumber numberWithInt:2] right:[NSNumber numberWithInt:6]]];
-    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"105-irvine" name:@"Irvine" up:[NSNumber numberWithInt:2] down:[NSNumber numberWithInt:9] left:[NSNumber numberWithInt:10] right:[NSNumber numberWithInt:6]]];
-    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"106-zell" name:@"Zell" up:[NSNumber numberWithInt:8] down:[NSNumber numberWithInt:10] left:[NSNumber numberWithInt:6] right:[NSNumber numberWithInt:5]]];
-    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"107-rinoa" name:@"Rinoa" up:[NSNumber numberWithInt:4] down:[NSNumber numberWithInt:2] left:[NSNumber numberWithInt:10] right:[NSNumber numberWithInt:10]]];
-    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"110-squall" name:@"Squall" up:[NSNumber numberWithInt:10] down:[NSNumber numberWithInt:6] left:[NSNumber numberWithInt:9] right:[NSNumber numberWithInt:4]]];
+    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"103-selphie-blue" name:@"Selphie" up:[NSNumber numberWithInt:10] down:[NSNumber numberWithInt:6] left:[NSNumber numberWithInt:4] right:[NSNumber numberWithInt:8]]];
+    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"104-quistis-blue" name:@"Quistis" up:[NSNumber numberWithInt:9] down:[NSNumber numberWithInt:10] left:[NSNumber numberWithInt:2] right:[NSNumber numberWithInt:6]]];
+    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"105-irvine-blue" name:@"Irvine" up:[NSNumber numberWithInt:2] down:[NSNumber numberWithInt:9] left:[NSNumber numberWithInt:10] right:[NSNumber numberWithInt:6]]];
+    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"106-zell-blue" name:@"Zell" up:[NSNumber numberWithInt:8] down:[NSNumber numberWithInt:10] left:[NSNumber numberWithInt:6] right:[NSNumber numberWithInt:5]]];
+    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"107-rinoa-blue" name:@"Rinoa" up:[NSNumber numberWithInt:4] down:[NSNumber numberWithInt:2] left:[NSNumber numberWithInt:10] right:[NSNumber numberWithInt:10]]];
+    [self->game.player1.deck.cards addObject:[[Card alloc] initWithImagePath:@"110-squall-blue" name:@"Squall" up:[NSNumber numberWithInt:10] down:[NSNumber numberWithInt:6] left:[NSNumber numberWithInt:9] right:[NSNumber numberWithInt:4]]];
 
-    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"100-ward" name:@"Ward" up:[NSNumber numberWithInt:10] down:[NSNumber numberWithInt:2] left:[NSNumber numberWithInt:8] right:[NSNumber numberWithInt:7]]];
-    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"101-kiros" name:@"Kiros" up:[NSNumber numberWithInt:6] down:[NSNumber numberWithInt:6] left:[NSNumber numberWithInt:10] right:[NSNumber numberWithInt:7]]];
-    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"102-laguna" name:@"Laguna" up:[NSNumber numberWithInt:5] down:[NSNumber numberWithInt:3] left:[NSNumber numberWithInt:9] right:[NSNumber numberWithInt:10]]];
-    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"108-edea" name:@"Edea" up:[NSNumber numberWithInt:10] down:[NSNumber numberWithInt:3] left:[NSNumber numberWithInt:3] right:[NSNumber numberWithInt:10]]];
-    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"109-seifer" name:@"Seifer" up:[NSNumber numberWithInt:6] down:[NSNumber numberWithInt:10] left:[NSNumber numberWithInt:4] right:[NSNumber numberWithInt:9]]];
-    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"099-eden" name:@"Eden" up:[NSNumber numberWithInt:4] down:[NSNumber numberWithInt:9] left:[NSNumber numberWithInt:10] right:[NSNumber numberWithInt:4]]];
+    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"100-ward-red" name:@"Ward" up:[NSNumber numberWithInt:10] down:[NSNumber numberWithInt:2] left:[NSNumber numberWithInt:8] right:[NSNumber numberWithInt:7]]];
+    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"101-kiros-red" name:@"Kiros" up:[NSNumber numberWithInt:6] down:[NSNumber numberWithInt:6] left:[NSNumber numberWithInt:10] right:[NSNumber numberWithInt:7]]];
+    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"102-laguna-red" name:@"Laguna" up:[NSNumber numberWithInt:5] down:[NSNumber numberWithInt:3] left:[NSNumber numberWithInt:9] right:[NSNumber numberWithInt:10]]];
+    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"108-edea-red" name:@"Edea" up:[NSNumber numberWithInt:10] down:[NSNumber numberWithInt:3] left:[NSNumber numberWithInt:3] right:[NSNumber numberWithInt:10]]];
+    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"109-seifer-red" name:@"Seifer" up:[NSNumber numberWithInt:6] down:[NSNumber numberWithInt:10] left:[NSNumber numberWithInt:4] right:[NSNumber numberWithInt:9]]];
+    [self->game.player2.deck.cards addObject:[[Card alloc] initWithImagePath:@"099-eden-red" name:@"Eden" up:[NSNumber numberWithInt:4] down:[NSNumber numberWithInt:9] left:[NSNumber numberWithInt:10] right:[NSNumber numberWithInt:4]]];
 
     for (int i = 0; i < [self->game.player1.deck.cards count]; i++) {
         [[self->game.player1.deck.cards objectAtIndex:i] imageView].frame = CGRectMake(40, 40 + (60 * i), 93, 120);
@@ -44,6 +44,12 @@
     self->startImagePosition.x = -1;
 
     self->startImagePosition.y = -1;
+
+    self->originalImagePosition.x = -1;
+
+    self->originalImagePosition.y = -1;
+
+    self->originalImageIndex = 0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,9 +66,17 @@
     if (self->startTouchPosition.x == -1 && self->startTouchPosition.y == -1) {
         NSMutableArray *possibleTouchedCards = [[NSMutableArray alloc] init];
 
-        for (int i = 0; i < [self->game.player1.deck.cards count]; i++) {
-            if (CGRectContainsPoint([[self->game.player1.deck.cards objectAtIndex:i] imageView].frame, location)) {
-                [possibleTouchedCards addObject:[self->game.player1.deck.cards objectAtIndex:i]];
+        Deck *deck;
+
+        if (self->game.turn == YES) {
+            deck = self->game.player1.deck;
+        } else {
+            deck = self->game.player2.deck;
+        }
+
+        for (int i = 0; i < [deck.cards count]; i++) {
+            if (CGRectContainsPoint([[deck.cards objectAtIndex:i] imageView].frame, location)) {
+                [possibleTouchedCards addObject:[deck.cards objectAtIndex:i]];
             }
         }
 
@@ -86,6 +100,12 @@
             self->startImagePosition.x = [topCard imageView].center.x;
 
             self->startImagePosition.y = [topCard imageView].center.y;
+
+            self->originalImagePosition.x = [topCard imageView].center.x;
+
+            self->originalImagePosition.y = [topCard imageView].center.y;
+
+            self->originalImageIndex = [self.view.subviews indexOfObject:[topCard imageView]];
 
             self->currentCard = topCard;
 
@@ -125,6 +145,20 @@
                             [NSValue valueWithCGPoint:CGPointMake(287, 371)], [NSValue valueWithCGPoint:CGPointMake(384, 371)], [NSValue valueWithCGPoint:CGPointMake(483, 371)],
                             [NSValue valueWithCGPoint:CGPointMake(287, 496)], [NSValue valueWithCGPoint:CGPointMake(384, 496)], [NSValue valueWithCGPoint:CGPointMake(483, 496)], nil];
 
+    NSArray *boardIndicies = [NSArray arrayWithObjects:
+                              [NSArray arrayWithObjects:
+                               [NSValue valueWithCGPoint:CGPointMake(0, 0)],
+                               [NSValue valueWithCGPoint:CGPointMake(0, 1)],
+                               [NSValue valueWithCGPoint:CGPointMake(0, 2)], nil],
+                              [NSArray arrayWithObjects:
+                               [NSValue valueWithCGPoint:CGPointMake(1, 0)],
+                               [NSValue valueWithCGPoint:CGPointMake(1, 1)],
+                               [NSValue valueWithCGPoint:CGPointMake(1, 2)], nil],
+                              [NSArray arrayWithObjects:
+                               [NSValue valueWithCGPoint:CGPointMake(2, 0)],
+                               [NSValue valueWithCGPoint:CGPointMake(2, 1)],
+                               [NSValue valueWithCGPoint:CGPointMake(2, 2)], nil], nil];
+
     int closestBoardPointIndex = 0;
 
     double closestDistanceFromBoard = sqrt((pow(location.x - [[boardPoints objectAtIndex:0] CGPointValue].x, 2) + pow(location.y - [[boardPoints objectAtIndex:0] CGPointValue].y, 2)));
@@ -139,12 +173,18 @@
         }
     }
 
-    if (closestDistanceFromBoard > 50) {
+    CGPoint boardIndex;
+
+    [[[boardIndicies objectAtIndex:(closestBoardPointIndex / 3)] objectAtIndex:(closestBoardPointIndex % 3)] getValue:&boardIndex];
+
+    if (closestDistanceFromBoard > 50 || [self->game.board cardAt:boardIndex]) {
+        [self.view insertSubview:[currentCard imageView] atIndex:self->originalImageIndex];
+
         [UIView animateWithDuration:0.35
                               delay:0.0
                             options:UIViewAnimationCurveEaseOut
                          animations:^{
-                             [[currentCard imageView] setFrame:CGRectMake(10, 100, [currentCard imageView].frame.size.width, [currentCard imageView].frame.size.height)];
+                             [[currentCard imageView] setCenter:self->originalImagePosition];
                          }
                          completion:nil];
     } else {
@@ -157,37 +197,44 @@
                          completion:nil];
 
 
-          UIView *myView = [currentCard imageView];
-          CALayer *layer = myView.layer;
-          //    CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
-          //    rotationAndPerspectiveTransform.m34 = 1.0 / -500;
-          //    rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, 90.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
-          //    layer.transform = rotationAndPerspectiveTransform;
+        UIView *myView = [currentCard imageView];
+
+        CALayer *layer = myView.layer;
+
+        //    CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
+        //    rotationAndPerspectiveTransform.m34 = 1.0 / -500;
+        //    rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, 90.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
+        //    layer.transform = rotationAndPerspectiveTransform;
 
 
-          //    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-          //    animation.duration = .25;
-          //    animation.fromValue = [NSNumber numberWithFloat:0];
-          //    animation.toValue = [NSNumber numberWithFloat:2 * M_PI];
+        //    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+        //    animation.duration = .25;
+        //    animation.fromValue = [NSNumber numberWithFloat:0];
+        //    animation.toValue = [NSNumber numberWithFloat:2 * M_PI];
 
 
-          CATransform3D transform = CATransform3DIdentity;
-          transform.m34 = 1.0 / -500;
-          layer.transform = transform;
+        CATransform3D transform = CATransform3DIdentity;
 
-          CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-          animation.values = [NSArray arrayWithObjects:
-                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 0 * M_PI / 2, 0, 1, 0)],
-                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 1 * M_PI / 2, 0, 1, 0)],
-                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 2 * M_PI / 2, 0, 1, 0)],
-                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 3 * M_PI / 2, 0, 1, 0)],
-                              [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 4 * M_PI / 2, 0, 1, 0)],
-                              nil];
-          animation.duration = 0.3;
-          
-          
-          [layer addAnimation:animation forKey:animation.keyPath];
-     }
+        transform.m34 = 1.0 / -500;
+
+        layer.transform = transform;
+
+        CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+        animation.values = [NSArray arrayWithObjects:
+                            [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 0 * M_PI / 2, 0, 1, 0)],
+                            [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 1 * M_PI / 2, 0, 1, 0)],
+                            [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 2 * M_PI / 2, 0, 1, 0)],
+                            [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 3 * M_PI / 2, 0, 1, 0)],
+                            [NSValue valueWithCATransform3D:CATransform3DRotate(transform, 4 * M_PI / 2, 0, 1, 0)], nil];
+
+        animation.duration = 0.3;
+
+        [layer addAnimation:animation forKey:animation.keyPath];
+
+        [self->game.board putCard:currentCard atPoint:boardIndex];
+
+        self->game.turn = !self->game.turn;
+    }
 
     self->startTouchPosition.x = -1;
 
@@ -196,6 +243,10 @@
     self->startImagePosition.x = -1;
 
     self->startImagePosition.y = -1;
+
+    self->originalImagePosition.x = -1;
+
+    self->originalImagePosition.y = -1;
 
     self->currentCard = nil;
 }
