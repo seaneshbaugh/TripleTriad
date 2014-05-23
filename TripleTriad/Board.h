@@ -11,4 +11,8 @@
 
 - (void)putCard:(Card *)card atPoint:(CGPoint)point;
 
+- (void)checkForFlipsAt:(CGPoint)point;
+
+- (void)flipCard:(Card *)card toController:(Player *)controller;
+
 @end
