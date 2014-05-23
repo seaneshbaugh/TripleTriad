@@ -196,9 +196,11 @@
                          }
                          completion:nil];
 
-
-        
         [self->game.board putCard:currentCard atPoint:boardIndex];
+
+        self->player1Score.text = [NSString stringWithFormat:@"%tu", [self->game scoreForPlayer:self->game.player1]];
+
+        self->player2Score.text = [NSString stringWithFormat:@"%tu", [self->game scoreForPlayer:self->game.player2]];
 
         self->game.turn = !self->game.turn;
     }

@@ -20,4 +20,18 @@
     return self;
 }
 
+- (NSUInteger)scoreForPlayer:(Player *)player {
+    NSUInteger result = 0;
+
+    for (int x = 0; x < [self.board.cards count]; x++) {
+        for (int y = 0; y < [[self.board.cards objectAtIndex:x] count]; y++) {
+            if ((id)[[self.board.cards objectAtIndex:x] objectAtIndex:y] != [NSNull null] && [[[[self.board.cards objectAtIndex:x] objectAtIndex:y] controller] isEqual:player]) {
+                result += 1;
+            }
+        }
+    }
+
+    return result;
+}
+
 @end

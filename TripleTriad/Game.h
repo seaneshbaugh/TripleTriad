@@ -14,4 +14,6 @@
 
 - (id)init;
 
+- (NSUInteger)scoreForPlayer:(Player *)player;
+
 @end
